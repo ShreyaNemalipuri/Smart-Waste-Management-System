@@ -1,0 +1,418 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionhome">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKcBBgYGBgcGBwgIBwoLCgsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9aX3x8p//CABEIAbUCoQMBIgACEQEDEQH/xAAwAAEAAgMBAAAAAAAAAAAAAAAAAQUDBAYCAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAC9DweYAABMSAAAASAAAAKkAAKCJiVBAUABMTQAAACYkAAABZAAAABIoAB78CyVretcceYAACYkAAAAkAAAAEigAUEBZCAoACYkACgAExIAAABKJAAAAWQgWhAWBbrjnkAABMSAAAASiQAAACRQAAALIQAFATEgAUAAmJAAAAExIAAACpgSLAUICtcYyAAAmJAAAAExIAAABIoAAAFkIACgASAKAATAkAAACYEgAAABUwJCBQLrjGQAAExIAAAAmJAAAAExNAAAAshAAUACQBQAAEgAAAAlEgAAAAKAAFYBzyFAAASAARtI0TAlAlAlAlAmfMkoEoEoEoVM+S+nknpBZQJQPTyPTyPTyPSBKBM+R6eR6eR6eR6eR6nzOEiAAAAAAAtwDnkKAAAkAAdU59/ddKRdraRdikXYpF2KRdikm6FKuhSroUq6FKuhSroUs3IplyKZcimXKqZcimXIppuBTrgU64FOuBTrgU64FOuBR+LylxnH68+tZTDmkAAAAAAW4BzyFAAASAAOq/y4svTuCgAAAAAAAGOrmbFUecZt8OpXTN65xjPR7HKTXYK+w7dwtAAAAAAAAUl3SYxh9efTmHMmBKJAAAAAtwDnkKAAATEgAdV/lxZencFAAAAAAAGslXVzHk8oZk72j1HXfLN/QxkM599Rymx16dRMT6PSAAAAAAAAo7yjxjF68+nMOYABMCUCQABbgHPIUAAAmJACJ6r/Liy9O4KAAAAAAAo7yJnj17Tebz4zJnNld48nr9Wvy/Xczz56w8/Fd03V9umQd/QAAAAAAAAo7yjxjF68+nMOYAAAAAALcI55CgAAAJBExPVf5cWXp3BQAAAAAHj1zWcXmDn3Hle2HJdPvdbtWTeg1t59DWwWGOZ09isquXPesuez5x1Tz69HpAAAAAAAUd5R4xi9efTmHMAAAAAAFuCYnnkAKAAAlEkTDq6DLiy9O4KAAAAABi5W5pOHnDjyWtVl1rrHn16/UCgOd6LTzjmh5PMBdW9Ldev0hrYAAAAACjvKPGMXrzLnI5gAAAAAAtwTE88gBQAACYkgdXQZcWXp3BQAAAAAKmk63luHDGOPH11Nbcen0RJ06gAAc/XdXy3n83nYxb2ZnudTb9HoDWgAAAAAFHeUeMYpiXMOaUCQAAAABbgHPMgCgAAAA6ugy4svTuCgAAAAAKu0iZ4/N72PN57Geca10bnB023yfV9ek6Gbmoudjm3Pn0lfVksNuk6W63B37gAAAAAAKO8o8YxTEuYcwACYEoEoEoEoW4RzzKJAAoAAAOroMuLL07goAAAAAAGlpXVbjFJj3tHz+cM5y9Ty3U9+/MYNjX5cgzB6s37/Fm9XqDWwAAAAAAFHeUWMY58+nMOYAAAAAALcI55TAkAUAAAHV0GXFl6dwUAAAAAABjyCmrer1efLmHQueKPq9Le69NbmevrpOfXG1z587e72bp0Dp1AAAAAAAAUV7RYxi9efTmHMAAEBQAAW4RzyBIAAoAAOroMuLL07goAAAAAAAAAAAAAAAAAAAAAACivaLGMXrz6cw5AoAAAAALcI55ATEgAUAAHV0GXFl6d2jk5G8+i2aHTuOzrs3LzXX5+es5rFtcn0DNjo7HLL0Njx/Xy62HU0Jm62qLCdNp5KRq3UebOOgz11jvrgxeanOeh1PVJHTaWaiXo9bYp7d3NR2OM2eD3R61ae9DDzzfaeSr1qxV3rnLJqzu52j75zfzaO96NKK9omcUxLmmHJKJAAAAAA0wjnAAJAFAAB1dBlxZenfR5rq+P1w7fn67bW95XseOhvaPmcnT810rfrnLnRl0ev5a/XX1dqrjpOW39KOrmJ325Tp+Y6fHLKN9sXN9RzPPlZ1efBzxa6U5bq6o7vntbnd84uebWkvqPVvtDTyS2Ofx776qdvU2/Pnb0t3S66x2NN74Ztnn169qK9osYxTEzmHMAABKBKBKBKGmIc4AAmJAAoAOroMuLL07+K/Ly+ufTcz0fOOfUcz0fNxa4bncnTkr7n71jQ1fO/JoW2oN2ssNWajLv0sdVERvty3Tcz0mOWwN9nP8AQUuMaPrzu8eWnZVtzrWxQW1evvFY1uJ0GtFV03cVljXYljt6m333U7entcM7ulu6HXWLd0tnjnanX2PTpRXtFnOKYmcw5gAAAAAArEMQAACQABQdXQZcGfp38850q55Ha6Qzr831hqv35S8rZ25nlukyl06joxTa/QpNCp6UuLznXXOXG2mQu1fYJOfs91nNDbbC2tWQVNsXU17NJS5LZl59HXVTsbznlob7VqptHKae4daob6hmcc+fU5BzoAAAAAAViGMgoACYkACg7NqwpTV0pVt0pRdKUXSlF0pRdKUXSmFyphczSi6UoulKLpSi6UoulKLpSi6UyrlTC5UwuVMLlTC5UwuVMLlTC5Uwsq/yzHqJmQ5gAAAAUAKwzE4gAAAEokACgoABMCQAAAAASiQAAAAACUSAAAAAABQASygSgSEAAAAC3CMSQgKAAmBIAoAAABMCQAAAAASiQAAAAABMCRQAAAAKCAAAAoACYEoEoViGMpgsgAAAlEgAUAAABKJAAAAAAJRIAAAAAABKBIoAAAAAFBAAAAAAtxDGQWUSgKAABKJAAoAAACUSAAAAAASiQAAAAAABMCUCRQAAAAAAAAAKFYhjIKBIAAoBMCQAAAAAASiQAAAAACUKkAAAAAAAAEoEokAAAAAAAAC3mx7O4AAAAAAD0HsDGEAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAP/xAAC/9oADAMBAAIAAwAAACEAADygIJf4IMNf0EED2oMIL6gAH32kEH34IIJb4AADY4AADygABTwIIJf8EEBX4MIL6oID32kEH30kMNf4MAIEAAADygAADwoIJf8ABBBV8DDC+qCA99pBB99pDDD+uBACDAAA8oAAA8oCCX/BBBV8DDCW+CAV9tBBV9tDDDT+uDBCAAA8oAAA8oDCD/pBBV8DDCW+CAV99BBR99JDDDT+++/CAA08AAExgAAN9rDDD9sNAQwAAMxxhDD/AP7wQwww89/ggAFPAAAGAssssokssssoggkMcIQQUcccUv7QQwwwwwggAFPAAAQQggggggggiYnQlwggggggggggv/bSQwwwwggAAPKAAQQggggggghYwuSA8agggggggglu/ffbTQQwggAAPKACQQggggggggQgiPQlQgggggggglg0dffffffggAAFPAKQQggggggjcxgAkpUsQAgggggglgQQUdfff/KggAFPCLQQggggggkQwwQgkQgiQgggggglhQQQQQUc8KggAAPKPQQggggggqg+YgggoUCgggggggllfTQQQQQwPggAANPPQQgggggggTkszyoMSwgggggggklfffbTTTTPiggAEPPQQgggggggsoA6oggUQggggggghmcfffffffPrggAAPHQQgggggggkoQOcyYQggggggggliAAcc/fffFvgggAFAQQgggggggggggggggggggggggloAgAAAQQQAvqggAAIQQqMO/hGi9QOQ5Q6NJCkUiNEa1lLiggggggQtvggAAAQZfKAqZ/QCvKwrXWWnpZi6gAyAEvvvvjjjjQkvqggAAASKCxlzGVMk8QgksE54s6IRI4QAgkstvvvvwAtvgggACUcsAwk0UwEwQko0MQo8gMUQY1CwgggggggwQkvqggAIsMNPvvs8ogwghzz0YYUQcdcdbowwwwwwgg6AAlvigggAPLAAAANfCgwg0//AMsMMMMPP33444MMMMMPwEAL64IAABDywAAADzwoMIIPf+8EEEEEBHH33z7644/2wAJL4oIAABTwgAABDzwoMIIPP/8APBBBBBBARxx999998JAC2+KCAAA08IAAAA18ICCCCT3/ALzwQQQQQQQQQQAd/vgggPLAAAggv/ywwww//wA0EEEEFHX300kEEEEEEEEMEEEEEEEF0MAEEEMMMMEEMEEAAAAAAAAAAAAAAAAAAAD/xAAC/9oADAMBAAIAAwAAABADT32kH330MP8A/wDw/wD7+gFTzygD33+sP/8A+CW+++AU89NAU88pD/8A/wAMP/8A/B989+DW++qC899pD/8A/wAsP/8A+DA+9/AU88pD/wD/AMsP/wD/AAffffA1/vqglPfaQf8A/wDrD/8A/rgQMswFPPKQ/wD/APrD/wD/AMH333wNf774JT320Ff3+8NP/wD+uDBDAU89oDX/AP6w/wD/APp9998DD+++CQ999BT/AP8A8sPf/wD+++/CU898DX9zjP8A/wD+lX332w3DDw477POc/wD/AP7Qw9//AP8A/wDwkPPfAVw6QQUcccYQQYcc884QUYccYQU8XPbww8//AP8A/CA898BDCoCCCCCCCCCIk3OJDACCCCCCCCW9/vLDDDzzCA888pDCgCCCCCCCCAiSHqDgKCCCCCCCCW9//wD7zwwwwgFPPaQyiAgggggggkBBQcAgAggggggggguf/wD/AP8A/wD/APCAU898BqoCCCCCCCb2OxCSQOCKCCCCCCCCJT3/APf/AP36oIDz3wm6AIIIIIIIgMYsIIQo4AIIIIIIIIUEFPP/AP8AfqggNPPKfAAgggggghA6IgggjzCwggggggglfTQQQQwQvggFPPfPAAggggggh2cvjTG0Ngggggggghl/ffbTTTTviggPPfPAAgggggggtwg76Qh0wggggggghn/fffffffvrggNPPfAAggggggggFIskTYggggggggglKsPff/fffPvggkPPfAAgggggggggggggggggggggggkaggEMMfffPvqggNPPAG7b7+Falmnni48mleVIkgOayANriggggggVvvggEPPAF4CG6f8AP9QukJz+dghMahUMYJbb77744440L76oIDRQBDEOpT4GrU38JBSlD9Mal5GcpZb77777778Lb74IJCwgPEDPGDBPOCEINMLBGNCJAKKBJvL7777778ML76oIADFTTzTzzDCQTzzzzyBBizQwwww6EMMPPPLLOoJb74oID77+4MP/AP8A/wAkHX3338tP/wD/AP8A/wD/APjjgwwwww/gwvvrggEPPfLQU/8A/wD/ACw8/wD/AP8A7wdffffPffffPvrjj/7gkvviggFPPfCQ0/8A/wD/ACw0/wD/AP8A/wA9HX3333z333333/8A+LC2++KCA0898JDT/wD/AP8ALDT3/wD/AP8AvPBx999999998/8A/vggvvrgggdffPCAEPPPfDAQcPfffffzyw88/wD/AP8A/wD/AM8888888+8B8/8AvPPPPPvPvvvvvvvvvvvvvvvvvvvvvP/EAEIRAAECAwMGDAMFBwUAAAAAAAIAAwEEEgUTUREUFTJSUxAiMDRARVRxkpOxwTNC0SExQ3SDICNBcHKChDVigaHw/9oACAECAQE/AKlUqlUqllWVZVlVSqVSqWVZVlWVZVlWVZVlWVVKpVKpVKpVKpVLKsqyrKsqyqpVKpCZCVQrO3tr+WktJvzFZBq/7ygI/wDa0TM7cv5oLRczvJfzAWi5nbl/MBaLmduX8wFouZ25fzAWi5nbl/MBaJmduX8wFouZ3kv5gLRczvJfzAWi5neS/mAtFzO3L+aC0XM7yX80PqtFzO8l/ND6rRczvJfzQ+q0XM7yX80P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" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#wcusection" id="navItem1">Why Choose Us?<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#howitworkssection" id="navItem2">How it works...</a>
+                        <a class="nav-link" href="#navigationsection" id="navItem3">Navigation & Location</a>
+                        <a class="nav-link" href="#inpracticesection" id="navItem4">In Practice</a>
+                        <a class="nav-link" href="#followussection" id="navItem5">Follow Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+            <div class="text-center">
+                <h1 class="banner-heading mb-2 pt-2">Smart Waste Managment System</h1>
+                <p class="banner-caption mb-2 ">Clean City Green City</p>
+                <button class="custom-button" onclick="display('sectionviewpage')">View Menu</button>
+                <button class="custom-outline-button" onclick="display('sectionknowpage')">Know More</button>
+            </div>
+        </div>
+        <div class="wcu-section pt-5 pb-5" id="wcusection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="wcu-heading">Why Choose Us?</h1>
+                        <p class="wcu-para">A smart waste management platform uses analytics to translate the data gather in your bins into actionable insights to help you improve your waste services. </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="wcu-card p-3 mb-3">
+                            <h1 class="wcu-card-title mt-3">Regular Waste Managment System</h1>
+                            <img src="https://safetyculture.com/wp-content/media/2023/07/Waste-Management-Life-Cycle.png" class="wcu-card-image mt-2 mb-4 w-100" />
+                            <p class="wcu-card-description">
+                                The regular waste management system includes waste collection trucks and their drivers that follow a predefined
+                                route without examining the containers’ fullness level. This system can’t measure the fullness levels of containers,
+                                and as a result, half-full containers can be emptied, and in contrast, pre-filled ones need to wait until the next
+                                collection period comes. Moreover, since drivers collect empty bins, predefined collection routes of the system
+                                cause waste of time, an increase in fuel consumption, and excessive use of resources.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="wcu-card p-3 mb-3">
+                            <h1 class="wcu-card-title mt-3">Smart Waste Managment System</h1>
+                            <img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_2560,h_1599/https://mycity360.co.il/wp-content/uploads/2020/12/%D7%A0%D7%99%D7%94%D7%95%D7%9C-%D7%96%D7%91%D7%9C-%D7%AA%D7%A8%D7%A9%D7%99%D7%9D-scaled.jpg" class="wcu-card-image mb-4 mt-2 w-100" />
+                            <p class="wcu-card-description">
+                                The first smart waste management solution to make the waste collection
+                                process more efficient is sensors. Sensors can measure the fill level of
+                                the containers and provide updated information at any time and notify waste
+                                management services to empty them when they are full or almost full. These
+                                devices help optimize the best possible route containing fully filled
+                                containers and create smart schedules for drivers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="how-it-works pt-2 pb-5 " id="howitworkssection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="how-heading">How it Works....</h1>
+                        <p class="how-para">IoT solutions for solid waste management problems offer municipalities
+                            data intelligence and real-time insights. In that regard, the fill patterns of specific
+                            containers can be identified by historical data and managed accordingly in the long term.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="shadow how-card p-3 mb-3">
+                            <img src="https://media.licdn.com/dms/image/C4D12AQHPxV-nDihsgQ/article-inline_image-shrink_400_744/0/1591287021343?e=1700092800&v=beta&t=tfVguxR7jHm-Sro5hqu0xmpFRuCO19oiWDVK0fgme7A" class="how-image w-100">
+                            <h1 class="how-title pt-2 mt-3">Proposed System</h1>
+                            <p class="how-para">The proposed method for the management of waste is
+                                efficient and time saving process. The ultrasonic sensor
+                                which is placed in the dustbin will detect the depth of the
+                                waste and the data will be stored in the microcontroller and
+                                displayed in the webpage. The water sensor will be placed
+                                on the top of the bin which will sense the raining water and
+                                closes the bin automatically and maintains dry waste and
+                                wet waste separately. This can be implemented at any place
+                                with ease and within reasonable amount of time and reliable
+                                with long distance coverage.</p>
+                            <a class="how-link" onclick="display('sectionprosys')">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="shadow how-card p-3 mb-3">
+                            <img src="https://d3i71xaburhd42.cloudfront.net/b63967de1ef5780c9e2b4814d5554ad0f91e0e79/2-Figure1-1.png" class="menu-item-image w-100" />
+                            <h1 class="how-title pt-2 mt-3">Sensing Data</h1>
+                            <p class="how-para">The Ultrasonic sensor detects the depth(level) of the garbage
+                                present in the dustbin. This sensor transmits the ultrasonic
+                                waves within the range of 100cm.Once the wet waste gets detected by the sensor,
+                                the motor gets ON and the waste is dumped into separate space.
+                                Rain drop sensor detects the water once it starts raining and
+                                close the bin automatically with the help of motor.</p>
+                            <a class="how-link" onclick="display('sectionsendata')">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inpractice pt-2 pb-5" id="inpracticesection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="in-heading">In Practice</h1>
+                    </div>
+                    <div class=" col-12 col-md-6">
+                        <p class="in-para">New York has one of the more complicated waste management
+                            ecosystems in North America. It takes around 72 hundred waste collectors and
+                            a lot of infrastructure to keep the city of roughly 8.6 million people sanitary
+                            and clean. In Times Square alone, an estimated 500,000 pedestrians pass through
+                            on a daily basis, creating roughly 15,300 pounds of garbage.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="in-para">In the Netherlands, starting in 2009, the city of Hague began
+                            installing underground trash bins that can hold a larger quantity of waste.
+                            As of 2017, the city has 6,100 units installed below the sidewalk with the top
+                            of the bin emerging out of the ground at waist height. Around 3,500 of these
+                            submerged receptacles are sensor-enabled, which has allowed waste-management
+                            officials to remotely monitor the fill levels of containers and set up “smart schedules”
+                            for emptying them.</p>
+                    </div>
+                    <img src="https://www.beesmart.city/hubfs/04-insights/07-blog-posts-solutions/covid-19-rethinking-smart-waste-management/pneumatic-waste-collection-in-smart-cities-marimatic-metro-taifun.jpg" class="w-50 in-image shadow ml-3">
+                </div>
+            </div>
+        </div>
+        <div class="navigation pt-2 pb-5" id="navigationsection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="nav-heading">Navigation & Location</h1>
+                        <p class="nav-para">The IoT enterprise solution can determine the best paths for garbage
+                            collectors to take in order to prioritize regions in need of cleanup while avoiding disposal
+                            units that still have space. This results in a more efficient pickup operation that doesn't
+                            take into account empty garbage containers, saving both gasoline and manpower.</p>
+                        <img src="https://nordsense.com/wp-content/uploads/2021/09/With-Nordsense-768x603.png" class="w-50 nav-map shadow">
+                    </div>
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="followus pt-2 pb-5 footer-section" id="followussection">
+            <div class="container">
+                <div class="col-12">
+                    <h1 class="follow-heading">Follow Us</h1>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="follow-us-icon-container">
+                        <i class="fab fa-twitter icon"></i>
+                    </div>
+                    <div class="follow-us-icon-container">
+                        <i class="fab fa-instagram icon"></i>
+                    </div>
+                    <div class="follow-us-icon-container">
+                        <i class="fab fa-facebook icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section pt-2 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-reduce-reuse-recycle-lettering_23-2149198760.jpg" class="logo m-2">
+                        <p class="footer-mail">collectwaste@smartwaste.com</p>
+                        <p class="footer-social">
+                            <li>insta id: _smart_waste_</li>
+                            <li>Mobile number:767654903</li>
+                            <li>facebook id:smart_waste@2023</li>
+                        </p>
+                        <p class="footer-adress">123 Ayur Vigyan Nagar, New Delhi, India.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionknowpage">
+        <div class="viewbag-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/09/05/727256-garbage-031417.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-98887821/98887821.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/29-03-2023-UNEP-ZWD-waste-management-01.jpg/image770x420cropped.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="text-center">
+                <h1 class="know-heading pt-5 pb-2">Effects of Improper Waste Managment System</h1>
+                <p class="know-para p-3">An inefficient municipal solid waste management system may create
+                    serious negative environmental impacts like infectious diseases, land and water pollution,
+                    obstruction of drains and loss of biodiversity.Solid waste damps are seriously spoiling
+                    the environmental conditions in developing countries. Negative environmental impacts from
+                    improper solid waste dumping can be easily observed everywhere in the developing world.
+                    In Pakistan, due to a lack of proper planning and funding, the solid waste management
+                    scenario is becoming worse day by day.</p>
+            </div>
+            <h1 class="know-heading ml-3 mt-5">Environental pollution</h1>
+            <p class="know-para ml-3">Without an effective waste management system, waste is often disposed of
+                improperly, leading to littering, illegal dumping, and contamination of natural ecosystems.
+                This can harm wildlife, damage water bodies, and contribute to soil pollution.</p>
+            <h1 class="know-heading ml-3 mt-5">Air Pollution</h1>
+            <p class="know-para ml-3">Open dumping and burning of waste release harmful pollutants into the air,
+                including greenhouse gases, particulate matter, and toxic chemicals. This can exacerbate air quality
+                issues and contribute to respiratory illnesses in nearby communities.</p>
+            <h1 class="know-heading ml-3 mt-5">Health Risks</h1>
+            <p class="know-para ml-3">Inadequate waste management can pose significant health risks. Exposed waste
+                can attract disease-carrying pests like rats, flies, and mosquitoes, increasing the risk of vector-borne diseases.
+                Contaminated water sources and food can also lead to illness outbreaks.</p>
+            <h1 class="know-heading ml-3 mt-5">Groundwater Contamination</h1>
+            <p class="know-para ml-3">Landfills and improperly managed waste sites can leach harmful chemicals and toxins into the
+                groundwater, potentially contaminating drinking water sources and affecting the health of nearby communities.</p>
+            <h1 class="know-heading ml-3 mt-5">Aesthetic and Quality of Life Issues</h1>
+            <p class="know-para ml-3">Accumulated waste, littered streets, and illegal dumping sites can create an unsightly and unpleasant
+                environment for residents and visitors. This can negatively impact the perception of a city or region and reduce overall quality of life</p>
+            <h1 class="know-heading ml-3 mt-5">Increased Greenhouse Gas Emissions</h1>
+            <p class="know-para ml-3">Landfills are a significant source of methane, a potent greenhouse gas. Without proper waste management practices,
+                methane emissions can contribute to global warming and climate change.</p>
+        </div>
+        <button onclick="display('sectionhome')" class="back mb-4 mt-2 ml-3">Back</button>
+    </div>
+    <div id="sectionviewpage">
+        <div class="viewbag-container col-12">
+            <h1 class="view-heading mt-4 ml-2 mb-4">MENU</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKcBBgYGBgcGBwgIBwoLCgsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9aX3x8p//CABEIAbUCoQMBIgACEQEDEQH/xAAwAAEAAgMBAAAAAAAAAAAAAAAAAQUDBAYCAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/aAAwDAQACEAMQAAAC9DweYAABMSAAAASAAAAKkAAKCJiVBAUABMTQAAACYkAAABZAAAABIoAB78CyVretcceYAACYkAAAAkAAAAEigAUEBZCAoACYkACgAExIAAABKJAAAAWQgWhAWBbrjnkAABMSAAAASiQAAACRQAAALIQAFATEgAUAAmJAAAAExIAAACpgSLAUICtcYyAAAmJAAAAExIAAABIoAAAFkIACgASAKAATAkAAACYEgAAABUwJCBQLrjGQAAExIAAAAmJAAAAExNAAAAshAAUACQBQAAEgAAAAlEgAAAAKAAFYBzyFAAASAARtI0TAlAlAlAlAmfMkoEoEoEoVM+S+nknpBZQJQPTyPTyPTyPSBKBM+R6eR6eR6eR6eR6nzOEiAAAAAAAtwDnkKAAAkAAdU59/ddKRdraRdikXYpF2KRdikm6FKuhSroUq6FKuhSroUs3IplyKZcimXKqZcimXIppuBTrgU64FOuBTrgU64FOuBR+LylxnH68+tZTDmkAAAAAAW4BzyFAAASAAOq/y4svTuCgAAAAAAAGOrmbFUecZt8OpXTN65xjPR7HKTXYK+w7dwtAAAAAAAAUl3SYxh9efTmHMmBKJAAAAAtwDnkKAAATEgAdV/lxZencFAAAAAAAGslXVzHk8oZk72j1HXfLN/QxkM599Rymx16dRMT6PSAAAAAAAAo7yjxjF68+nMOYABMCUCQABbgHPIUAAAmJACJ6r/Liy9O4KAAAAAAAo7yJnj17Tebz4zJnNld48nr9Wvy/Xczz56w8/Fd03V9umQd/QAAAAAAAAo7yjxjF68+nMOYAAAAAALcI55CgAAAJBExPVf5cWXp3BQAAAAAHj1zWcXmDn3Hle2HJdPvdbtWTeg1t59DWwWGOZ09isquXPesuez5x1Tz69HpAAAAAAAUd5R4xi9efTmHMAAAAAAFuCYnnkAKAAAlEkTDq6DLiy9O4KAAAAABi5W5pOHnDjyWtVl1rrHn16/UCgOd6LTzjmh5PMBdW9Ldev0hrYAAAAACjvKPGMXrzLnI5gAAAAAAtwTE88gBQAACYkgdXQZcWXp3BQAAAAAKmk63luHDGOPH11Nbcen0RJ06gAAc/XdXy3n83nYxb2ZnudTb9HoDWgAAAAAFHeUeMYpiXMOaUCQAAAABbgHPMgCgAAAA6ugy4svTuCgAAAAAKu0iZ4/N72PN57Geca10bnB023yfV9ek6Gbmoudjm3Pn0lfVksNuk6W63B37gAAAAAAKO8o8YxTEuYcwACYEoEoEoEoW4RzzKJAAoAAAOroMuLL07goAAAAAAGlpXVbjFJj3tHz+cM5y9Ty3U9+/MYNjX5cgzB6s37/Fm9XqDWwAAAAAAFHeUWMY58+nMOYAAAAAALcI55TAkAUAAAHV0GXFl6dwUAAAAAABjyCmrer1efLmHQueKPq9Le69NbmevrpOfXG1z587e72bp0Dp1AAAAAAAAUV7RYxi9efTmHMAAEBQAAW4RzyBIAAoAAOroMuLL07goAAAAAAAAAAAAAAAAAAAAAACivaLGMXrz6cw5AoAAAAALcI55ATEgAUAAHV0GXFl6d2jk5G8+i2aHTuOzrs3LzXX5+es5rFtcn0DNjo7HLL0Njx/Xy62HU0Jm62qLCdNp5KRq3UebOOgz11jvrgxeanOeh1PVJHTaWaiXo9bYp7d3NR2OM2eD3R61ae9DDzzfaeSr1qxV3rnLJqzu52j75zfzaO96NKK9omcUxLmmHJKJAAAAAA0wjnAAJAFAAB1dBlxZenfR5rq+P1w7fn67bW95XseOhvaPmcnT810rfrnLnRl0ev5a/XX1dqrjpOW39KOrmJ325Tp+Y6fHLKN9sXN9RzPPlZ1efBzxa6U5bq6o7vntbnd84uebWkvqPVvtDTyS2Ofx776qdvU2/Pnb0t3S66x2NN74Ztnn169qK9osYxTEzmHMAABKBKBKBKGmIc4AAmJAAoAOroMuLL07+K/Ly+ufTcz0fOOfUcz0fNxa4bncnTkr7n71jQ1fO/JoW2oN2ssNWajLv0sdVERvty3Tcz0mOWwN9nP8AQUuMaPrzu8eWnZVtzrWxQW1evvFY1uJ0GtFV03cVljXYljt6m333U7entcM7ulu6HXWLd0tnjnanX2PTpRXtFnOKYmcw5gAAAAAArEMQAACQABQdXQZcGfp38850q55Ha6Qzr831hqv35S8rZ25nlukyl06joxTa/QpNCp6UuLznXXOXG2mQu1fYJOfs91nNDbbC2tWQVNsXU17NJS5LZl59HXVTsbznlob7VqptHKae4daob6hmcc+fU5BzoAAAAAAViGMgoACYkACg7NqwpTV0pVt0pRdKUXSlF0pRdKUXSmFyphczSi6UoulKLpSi6UoulKLpSi6UyrlTC5UwuVMLlTC5UwuVMLlTC5Uwsq/yzHqJmQ5gAAAAUAKwzE4gAAAEokACgoABMCQAAAAASiQAAAAACUSAAAAAABQASygSgSEAAAAC3CMSQgKAAmBIAoAAABMCQAAAAASiQAAAAABMCRQAAAAKCAAAAoACYEoEoViGMpgsgAAAlEgAUAAABKJAAAAAAJRIAAAAAABKBIoAAAAAFBAAAAAAtxDGQWUSgKAABKJAAoAAACUSAAAAAASiQAAAAAABMCUCRQAAAAAAAAAKFYhjIKBIAAoBMCQAAAAAASiQAAAAACUKkAAAAAAAAEoEokAAAAAAAAC3mx7O4AAAAAAD0HsDGEAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAP/xAAC/9oADAMBAAIAAwAAACEAADygIJf4IMNf0EED2oMIL6gAH32kEH34IIJb4AADY4AADygABTwIIJf8EEBX4MIL6oID32kEH30kMNf4MAIEAAADygAADwoIJf8ABBBV8DDC+qCA99pBB99pDDD+uBACDAAA8oAAA8oCCX/BBBV8DDCW+CAV9tBBV9tDDDT+uDBCAAA8oAAA8oDCD/pBBV8DDCW+CAV99BBR99JDDDT+++/CAA08AAExgAAN9rDDD9sNAQwAAMxxhDD/AP7wQwww89/ggAFPAAAGAssssokssssoggkMcIQQUcccUv7QQwwwwwggAFPAAAQQggggggggiYnQlwggggggggggv/bSQwwwwggAAPKAAQQggggggghYwuSA8agggggggglu/ffbTQQwggAAPKACQQggggggggQgiPQlQgggggggglg0dffffffggAAFPAKQQggggggjcxgAkpUsQAgggggglgQQUdfff/KggAFPCLQQggggggkQwwQgkQgiQgggggglhQQQQQUc8KggAAPKPQQggggggqg+YgggoUCgggggggllfTQQQQQwPggAANPPQQgggggggTkszyoMSwgggggggklfffbTTTTPiggAEPPQQgggggggsoA6oggUQggggggghmcfffffffPrggAAPHQQgggggggkoQOcyYQggggggggliAAcc/fffFvgggAFAQQgggggggggggggggggggggggloAgAAAQQQAvqggAAIQQqMO/hGi9QOQ5Q6NJCkUiNEa1lLiggggggQtvggAAAQZfKAqZ/QCvKwrXWWnpZi6gAyAEvvvvjjjjQkvqggAAASKCxlzGVMk8QgksE54s6IRI4QAgkstvvvvwAtvgggACUcsAwk0UwEwQko0MQo8gMUQY1CwgggggggwQkvqggAIsMNPvvs8ogwghzz0YYUQcdcdbowwwwwwgg6AAlvigggAPLAAAANfCgwg0//AMsMMMMPP33444MMMMMPwEAL64IAABDywAAADzwoMIIPf+8EEEEEBHH33z7644/2wAJL4oIAABTwgAABDzwoMIIPP/8APBBBBBBARxx999998JAC2+KCAAA08IAAAA18ICCCCT3/ALzwQQQQQQQQQQAd/vgggPLAAAggv/ywwww//wA0EEEEFHX300kEEEEEEEEMEEEEEEEF0MAEEEMMMMEEMEEAAAAAAAAAAAAAAAAAAAD/xAAC/9oADAMBAAIAAwAAABADT32kH330MP8A/wDw/wD7+gFTzygD33+sP/8A+CW+++AU89NAU88pD/8A/wAMP/8A/B989+DW++qC899pD/8A/wAsP/8A+DA+9/AU88pD/wD/AMsP/wD/AAffffA1/vqglPfaQf8A/wDrD/8A/rgQMswFPPKQ/wD/APrD/wD/AMH333wNf774JT320Ff3+8NP/wD+uDBDAU89oDX/AP6w/wD/APp9998DD+++CQ999BT/AP8A8sPf/wD+++/CU898DX9zjP8A/wD+lX332w3DDw477POc/wD/AP7Qw9//AP8A/wDwkPPfAVw6QQUcccYQQYcc884QUYccYQU8XPbww8//AP8A/CA898BDCoCCCCCCCCCIk3OJDACCCCCCCCW9/vLDDDzzCA888pDCgCCCCCCCCAiSHqDgKCCCCCCCCW9//wD7zwwwwgFPPaQyiAgggggggkBBQcAgAggggggggguf/wD/AP8A/wD/APCAU898BqoCCCCCCCb2OxCSQOCKCCCCCCCCJT3/APf/AP36oIDz3wm6AIIIIIIIgMYsIIQo4AIIIIIIIIUEFPP/AP8AfqggNPPKfAAgggggghA6IgggjzCwggggggglfTQQQQwQvggFPPfPAAggggggh2cvjTG0Ngggggggghl/ffbTTTTviggPPfPAAgggggggtwg76Qh0wggggggghn/fffffffvrggNPPfAAggggggggFIskTYggggggggglKsPff/fffPvggkPPfAAgggggggggggggggggggggggkaggEMMfffPvqggNPPAG7b7+Falmnni48mleVIkgOayANriggggggVvvggEPPAF4CG6f8AP9QukJz+dghMahUMYJbb77744440L76oIDRQBDEOpT4GrU38JBSlD9Mal5GcpZb77777778Lb74IJCwgPEDPGDBPOCEINMLBGNCJAKKBJvL7777778ML76oIADFTTzTzzDCQTzzzzyBBizQwwww6EMMPPPLLOoJb74oID77+4MP/AP8A/wAkHX3338tP/wD/AP8A/wD/APjjgwwwww/gwvvrggEPPfLQU/8A/wD/ACw8/wD/AP8A7wdffffPffffPvrjj/7gkvviggFPPfCQ0/8A/wD/ACw0/wD/AP8A/wA9HX3333z333333/8A+LC2++KCA0898JDT/wD/AP8ALDT3/wD/AP8AvPBx999999998/8A/vggvvrgggdffPCAEPPPfDAQcPfffffzyw88/wD/AP8A/wD/AM8888888+8B8/8AvPPPPPvPvvvvvvvvvvvvvvvvvvvvvP/EAEIRAAECAwMGDAMFBwUAAAAAAAIAAwEEEgUTUREUFTJSUxAiMDRARVRxkpOxwTNC0SExQ3SDICNBcHKChDVigaHw/9oACAECAQE/AKlUqlUqllWVZVlVSqVSqWVZVlWVZVlWVZVlWVVKpVKpVKpVKpVLKsqyrKsqyqpVKpCZCVQrO3tr+WktJvzFZBq/7ygI/wDa0TM7cv5oLRczvJfzAWi5nbl/MBaLmduX8wFouZ25fzAWi5nbl/MBaJmduX8wFouZ3kv5gLRczvJfzAWi5neS/mAtFzO3L+aC0XM7yX80PqtFzO8l/ND6rRczvJfzQ+q0XM7yX80P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" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://psiborg.in/wp-content/uploads/2023/04/Garbage-Bin-monitoring-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.infodiagram.com/c/90ffe3/waste-prevention-waste-management-reduce-reuse-recycle-use-again.png" class="d-block w-100" alt="...">
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <h1 class="view-heading mt-5 ml-2">About our Company</h1>
+                <p class="view-para ml-2 mr-2 mt-1 mb-2">Our is a forward-thinking technology company committed to creating innovative solutions that address
+                    critical environmental and urban challenges. Founded on the principles of sustainability, efficiency, and environmental
+                    responsibility, we specialize in developing cutting-edge IoT-based systems to improve waste management processes and contribute
+                    to cleaner, more sustainable cities.</p>
+                <h1 class="view-heading mt-5 ml-2">What We Do</h1>
+                <p class="view-para ml-2 mr-2 mt-1 mb-2">We are dedicated to revolutionizing the waste management industry through the implementation of our
+                    Smart Waste Management System. Our system leverages the power of the Internet of Things (IoT) to provide real-time monitoring, efficient collection,
+                    and intelligent data analysis for waste management operations.</p>
+                <h1 class="view-heading mt-5 ml-2">Who maintains this</h1>
+                <p class="view-para ml-2 mr-2 mt-1 mb-2">Smart Waste takes pride in providing end-to-end solutions for our Smart Waste Management System. Our team of dedicated
+                    engineers, data analysts, and support staff work tirelessly to ensure the smooth operation of the system. We offer ongoing maintenance, updates, and customer support
+                    to our clients to ensure the long-term success of their waste management initiatives.</p>
+                <button onclick="display('sectionhome')" class="back mt-4 ml-2 mb-2">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionprosys">
+        <div class="prosysbg-container col-12">
+            <h1 class="prosys-heading mt-4 ml-2 mb-4">PROPOSED SYSTEM</h1>
+            <p class="prosys-para mt-4 ml-2 mb-4">Proposed system basically consists of majorlly two sensors which we have know
+                ultrasonic sensor and water sensor now we are going to know in detail about those two.Sensors measure the level of
+                waste Containers send the info to a data management system of the level of waste or last collection. Only certain
+                bins are marked for collection. Vehicles only collect full or overdue containers.</p>
+            <div class="col-12">
+                <div class="prosys-card p-3 mb-3">
+                    <h1 class="prosys-card-title mt-3">Ultrasonic Sensor</h1>
+                    <img src="https://www.researchgate.net/publication/353363674/figure/fig2/AS:1047974301941760@1626867952163/LCD-ULTRASONIC-SENSOR-The-ultrasonic-sensor-used-to-monitor-the-trash-level-within-the.jpg" class="pro-sys-image mt-2 mb-4 w-100" />
+                    <p class="prosys-card-description">
+                        Ultrasonic sensors in a smart waste management system serve various important purposes,
+                        contributing to the efficiency and effectiveness of waste collection and disposal processes.
+                        Here are some of the key uses of ultrasonic sensors in such a system:
+                    <div>
+                        <h1 class="prosys-subheading">Fill-Level Monitoring:</h1>
+                        <p class="prosys-card-description">Ultrasonic sensors are commonly used to measure the fill
+                            levels of waste containers. They emit high-frequency sound waves that bounce off the waste's
+                            surface and return to the sensor. By measuring the time it takes for the sound waves to return,
+                            the sensor can accurately determine the fill level. This data is invaluable for optimizing
+                            waste collection routes and schedules.</p>
+                    </div>
+                    <div>
+                        <h1 class="prosys-subheading">Data Analytics:</h1>
+                        <p class="prosys-card-description">The data collected by ultrasonic sensors can be
+                            analyzed over time to identify usage patterns and trends. This information can be valuable
+                            for long-term planning, resource allocation, and capacity adjustments.</p>
+                    </div>
+                    <div>
+                        <h1 class="prosys-subheading">Alerts and Notifications:</h1>
+                        <p class="prosys-card-description">When a waste container reaches a certain fill level threshold,
+                            the system can generate automated alerts and notifications,ensuring timely waste collection.
+                            This proactive approach prevents overflows and keeps the area clean.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="prosys-card p-3 mb-3">
+                    <h1 class="prosys-card-title mt-3">Water Sensor</h1>
+                    <img src="https://i0.wp.com/srituhobby.com/wp-content/uploads/2021/02/145.jpg?resize=1200%2C675&ssl=1" class="pro-sys-image mt-2 mb-4 w-100" />
+                    <p class="prosys-card-description">
+                        A water sensor is a device designed to detect the presence or absence of water, measure water levels,
+                        or monitor water-related conditions in a specific area. These sensors are commonly used in a variety
+                        of applications to prevent damage from water leaks, control water-related processes, ensure safety,
+                        and gather data for analysis.
+                    <div>
+                        <h1 class="prosys-subheading">Leak Detection:</h1>
+                        <p class="prosys-card-description">Water sensors can detect leaks or flooding in waste collection
+                            areas. If there's a leak, it can trigger an alert to the waste management system, allowing for a
+                            quick response to address the issue.</p>
+                    </div>
+                    <div>
+                        <h1 class="prosys-subheading">Optimizing Collection Schedules:</h1>
+                        <p class="prosys-card-description"> Water sensors can provide data on weather conditions, including
+                            rainfall, which can be used to optimize waste collection schedules. For example, if heavy rain is
+                            expected, the system might adjust collection times to avoid wet and potentially hazardous conditions
+                            for waste collection workers</p>
+                    </div>
+                    <div>
+                        <h1 class="prosys-subheading">Environmental Monitoring:</h1>
+                        <p class="prosys-card-description"> In some cases, waste management systems are located near bodies
+                            of water or in areas prone to flooding. Water sensors can monitor the water levels and notify
+                            authorities if there's a risk of flooding, which can help in planning waste collection and
+                            disposal accordingly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="display('sectionhome')" class="back mt-4 ml-4 mb-2">Back</button>
+    </div>
+    <div id="sectionsendata">
+        <div class="sendata-bg-container col-12">
+            <h1 class="prosys-heading mt-4 ml-2 mb-4">SENSING DATA</h1>
+            <p class="prosys-para mt-4 ml-2 mb-4">Sensing data refers to the information or measurements collected by various sensors deployed within the system.
+                These sensors are strategically placed in and around waste collection points, containers, and other relevant locations to gather data that is crucial
+                for optimizing waste management processes. The sensing data plays a central role in making the system more efficient, cost-effective, and environmentally friendly. </p>
+            <div class="col-12">
+                <h1 class="sendata-subheading">Fill-Level Data:</h1>
+                <p class="sendata-card-description"> Sensors, such as ultrasonic or weight sensors, monitor the fill levels of waste containers. This data indicates how full or empty
+                    a container is at any given time, allowing waste management companies to schedule collections based on actual need rather than fixed schedules.</p>
+                <h1 class="sendata-subheading">Temperature Data:</h1>
+                <p class="sendata-card-description">Some systems may incorporate temperature sensors to monitor environmental conditions. This data can help in managing waste that is
+                    sensitive to temperature, ensuring it is stored and collected under appropriate conditions.</p>
+                <h1 class="sendata-subheading">Environmental Conditions:</h1>
+                <p class="sendata-card-description">Sensors can monitor factors like humidity, air quality, and even weather conditions. This data can be used to make informed decisions
+                    about waste collection and disposal, taking into account environmental factors that may impact the process.</p>
+                <h1 class="sendata-subheading">Location Data:</h1>
+                <p class="sendata-card-description">GPS and geospatial sensors provide location information, helping optimize collection routes and ensuring that waste collection trucks
+                    are directed to the right containers.</p>
+                <h1 class="sendata-subheading">Data Analysis:</h1>
+                <p class="sendata-card-description">The sensing data collected over time can be analyzed to identify trends, usage patterns, and areas that require special attention.
+                    This analysis informs decision-making for future waste management strategies.</p>
+                <h1 class="sendata-subheading">Customer Notifications:</h1>
+                <p class="sendata-card-description"> Some smart waste management systems also provide data to customers, allowing them to check the fill levels of waste containers
+                    in their area. This can be particularly useful for residential waste collection services.</p>
+            </div>
+        </div>
+        <button onclick="display('sectionhome')" class="back mt-4 ml-4 mb-2">Back</button>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
