@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem5 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+.banner-section-bg-container {
+    background-image: url("https://datatopics.worldbank.org/what-a-waste/img/v3_waste_disposal_site.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.banner-heading {
+    color: #023020;
+    font-family: "roboto";
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.banner-caption {
+    color: #000000;
+    font-family: "Serif";
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.custom-button {
+    color: white;
+    background-color: #023020;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.custom-outline-button {
+    color: #023020;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #023020;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Serif";
+}
+
+.wcu-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.wcu-section {
+    background-color: #f9fbfe;
+}
+
+.wcu-para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.wcu-card {
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.wcu-card-image {
+    width: 70vw;
+    height: 40vh;
+}
+
+.wcu-card-title {
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.wcu-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.how-it-works {
+    background-color: #f9fbfe;
+}
+
+.how-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.how-para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.how-card {
+    border-radius: 16px;
+}
+
+.how-image {
+    border-radius: 16px;
+}
+
+.how-title {
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.how-link {
+    color: black;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inpractice {
+    background-color: #f9fbfe;
+}
+
+.in-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.navigation {
+    background-color: #f9fbfe;
+}
+
+.nav-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.in-para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.in-image {
+    border-radius: 10px;
+}
+
+.nav-para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.nav-map {
+    border-radius: 10px;
+}
+
+.nav-button {
+    color: white;
+    background-color: #023020;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    border-width: 0;
+}
+
+.followus {
+    background-color: #f9fbfe;
+}
+
+.follow-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #98FB98;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 24px;
+}
+
+.icon {
+    color: #008000;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: #FFFDD0;
+}
+
+.footer-mail {
+    color: #355E3B;
+    font-family: "roboto";
+    font-weight: bold;
+}
+
+.footer-social {
+    color: #355E3B;
+    font-family: "roboto";
+}
+
+.footer-adress {
+    color: #355E3B;
+    font-family: "roboto";
+    font-weight: bold;
+}
+
+.knowbg-container {
+    background-color: #f9fbfe;
+}
+
+.know-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.know-para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.back {
+    color: white;
+    background-color: #023020;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.viewbg-container {
+    background-color: #f9fbfe;
+}
+
+.view-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.view-para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.prosysbg-container {
+    background-color: #f9fbfe;
+}
+
+.prosys-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.prosys-para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.prosys-card {
+    text-align: left;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.prosys-card-title {
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.prosys-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.pro-sys-image {
+    height: 70vh;
+}
+
+.prosys-subheading {
+    color: #023020;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sendatabg-container {
+    background-color: #f9fbfe;
+}
+
+.sendata-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sendata-para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.sendata-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.sendata-subheading {
+    color: #023020;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: bold;
+}
